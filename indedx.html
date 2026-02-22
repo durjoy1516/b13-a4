@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Application-Head-Section-->
+    <section class="container mx-auto mt-[60px] ">
+        <div class="mb-10">
+            <h1  class="font-bold  text-[32px] text-[#002c5c]">Job Application Tracker</h1>
+        </div>
+        <div class="grid grid-cols-3 gap-4 ">
+            <div class="border border-[#f1f2f4FF] rounded-md p-4">
+                <p class="text-[14px] font-medium text-[#323b49] mb-2">Total</p>
+                <h2 id="totalCount" class="text-[24px] font-bold text-[#002c5c]">8</h2>
+            </div>
+            <div class="border border-[#f1f2f4FF] rounded-md p-4">
+                <p class="text-[14px] font-medium text-[#323b49] mb-2">Interview</p>
+                <h2 id="interviewCount" class="text-[24px] font-bold text-[#10b981]">0</h2>
+            </div>
+            <div class="border border-[#f1f2f4FF] rounded-md p-4">
+                <p class="text-[14px] font-medium text-[#323b49] mb-2">Rejected</p>
+                <h2 id="rejectionCount" class="text-[24px] font-bold text-[#ef4444]">0</h2>
+            </div>
+        </div>
+    </section>
+    
+
+
+</body>
+</html>
