@@ -51,7 +51,7 @@
     <section id="mainSection" class="container mx-auto">
         <div class="flex justify-between my-7">
             <h3 class="text-[20px] font-semibold text-[#002c5c]">Available Jobs</h3>
-            <p class="text-[16px] font-medium text-[#64748b]">8 jobs </p>
+            <p id="availableCount" class="text-[16px] font-medium text-[#64748b]">8 jobs</p>
         </div>
     </section>
 
@@ -63,10 +63,16 @@
             <button onclick="toggleStyle('rejectedList-btn')" class="bg-[#f1f2f4] px-5 py-2 rounded-md w-30" id="rejectedList-btn">Rejected</button>
         </div>
 
+<!-- 
+        filtered-section
+        <section id="filtered-section" class="hidden"></section> -->
+
 
         <section class="space-y-4 mb-[60px]" id="allCards">
-            <!-- card-1 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+
+            <div id="allCardList">
+               <!-- card-1 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -88,9 +94,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-2 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-2 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -112,9 +118,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-3 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-3 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -137,9 +143,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-4 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-4 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -161,9 +167,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-5 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-5 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -185,9 +191,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-6 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-6 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -209,9 +215,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-7 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-7 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -233,9 +239,9 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
-            </div>
-            <!-- card-8 -->
-            <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
+                </div>
+                <!-- card-8 -->
+                <div class="card flex justify-between px-6 py-5 border border-[#f1f2f4] rounded-md">
                 <!-- main-part-1 -->
                 <div class="space-y-5">
                     <div>
@@ -257,9 +263,28 @@
                 <div class="mx-6 my-2.5">
                     <span><img src="./images/trash.png" alt="" class="bg-[#ffffff] rounded-full px-2.5 py-2.5 border border-[#f1f2f4]"></span>
                 </div>
+                </div>
             </div>
+            <!-- filtered-section -->
+            <section id="filtered-section" class="hidden container mx-auto">
+                <div id="no-data-msg" class="flex flex-col  items-center justify-center border border-[#f1f2f4] rounded-md h-[400px] gap-2.5">
+                    <img src="./images/assignment.png" alt="" class="w-25">
+                    <h4 id="no-data-msg" class="text-[24px] font-semibold text-[#002c5c] mt-4">No jobs available</h4>
+                    <p class="text-[16px] text-[#64748b] font-normal">Check back soon for new job opportunities</p>
+                </div>   
+            </section>
         </section>
     </section>
     <script src="./script.js"></script>
 </body>
+    <!-- <footer>
+        <section id="filtered-section" class="hidden container mx-auto">
+             <div class="flex flex-col  items-center justify-center border border-[#f1f2f4] rounded-md h-[400px] gap-2.5">
+                <img src="./images/assignment.png" alt="" class="w-25">
+                <h4 id="no-data-msg" class="text-[24px] font-semibold text-[#002c5c] mt-4">No jobs available</h4>
+                <p class="text-[16px] text-[#64748b] font-normal">Check back soon for new job opportunities</p>
+             </div>   
+        </section>
+    </footer>         -->
+
 </html>
